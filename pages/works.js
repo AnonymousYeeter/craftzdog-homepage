@@ -3,29 +3,28 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbInkdrop from '../public/images/works/thumb1.jpg'
+import thumbWalknote from '../public/images/works/thumb2.jpg'
+import thumbFourPainters from '../public/images/works/thumb3.jpg'
+import thumbFreeDBTagger from '../public/images/works/thumb1.jpg'
+import thumbMenkiki from '../public/images/works/thumb4.jpg'
+import thumbMargelo from '../public/images/works/thumb1.jpg'
+import thumbModeTokyo from '../public/images/works/thumb2.jpg'
+import thumbStyly from '../public/images/works/thumb3.jpg'
+import thumbPichu2 from '../public/images/works/thumb4.jpg'
+import thumbAmembo from '../public/images/works/thumb1.jpg'
 
 const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Redactions Recommendées
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="inkdrop" title="Titre" thumbnail={thumbInkdrop}>
+            Petit Somaire
           </WorkGridItem>
         </Section>
         <Section>
@@ -34,24 +33,22 @@ const Works = () => (
             title="walknote"
             thumbnail={thumbWalknote}
           >
-            Music recommendation app for iOS
+            Petit Somaire
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
             id="fourpainters"
-            title="The four painters"
+            title="Titre"
             thumbnail={thumbFourPainters}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Petit Somaire
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Titre">
+            Petit Somaire
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -60,15 +57,14 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Titre
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
+          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Titre">
+            Petit Somaire
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
@@ -77,12 +73,12 @@ const Works = () => (
             thumbnail={thumbModeTokyo}
             title="mode.tokyo"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            Petit Somaire
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
+          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Titre">
+            Petit Somaire
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -91,29 +87,28 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Autres Rédactions
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
+          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Titre">
+            Petit Sommaire
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
           <WorkGridItem
             id="freedbtagger"
             thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            title="Titre"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
+            Petit Somaire
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Titre">
+            Petit Somaire
           </WorkGridItem>
         </Section>
       </SimpleGrid>

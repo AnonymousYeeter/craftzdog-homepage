@@ -4,7 +4,11 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio
+  SimpleGrid,
+  UnorderedList,
+  Heading,
+  Center,
+  Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -12,48 +16,27 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="STYLY">
+  <Layout title="titre">
     <Container>
       <Title>
-        STYLY <Badge>2017</Badge>
+        Titre <Badge>Date</Badge>
       </Title>
+      <Center my={6}>
+        <Image src="/images/works/thumb2.jpg" alt="icon" />
+      </Center>
       <P>
-        STYLY Studio is a creative tool for VR, allowing you to build virtual
-        spaces towards extending fashion brand&apos;s expression ability of
-        their concept. I built its web UI and backend.
+        SousTitre
       </P>
-
-      <List ml={4} my={4}>
+      <P>
+        Text
+      </P>
+      <UnorderedList ml={4} my={4}>
+        <ListItem>List</ListItem>
+        <ListItem>List</ListItem>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>Web</span>
+          List
         </ListItem>
-        <ListItem>
-          <Meta>Stack</Meta>
-          <span>React, PHP</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://styly.cc/">
-            STYLY <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-      </List>
-
-      <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/YLdHAggLBCw"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio>
-
-      <WorkImage src="/images/works/styly_eyecatch.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_01.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_02.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_03.png" alt="STYLY" />
+      </UnorderedList>
     </Container>
   </Layout>
 )
